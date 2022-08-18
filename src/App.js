@@ -74,31 +74,31 @@ function App() {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="include-symbols">Add Uppercase Letters</label>
-            <input  type="checkbox" id="include-symbols" name="include-symbols"
+            <label htmlFor="include-upper-case">Add Uppercase Letters</label>
+            <input  type="checkbox" id="include-upper-case" name="include-upper-case"
             checked={includeUpperCase}
             onChange={e => setIncludeUpperCase(e.target.checked)}
             />
           </div>
           <div className="form-group">
-            <label htmlFor="include-symbols">Add Lowercase Letters</label>
-            <input  type="checkbox" id="include-symbols" name="include-symbols" 
+            <label htmlFor="include-lower-case">Add Lowercase Letters</label>
+            <input  type="checkbox" id="include-lower-case" name="include-lower-case" 
             checked={includeLowerCase}
             onChange={e => setIncludeLowerCase(e.target.checked)}
             />
           </div>
           <div className="form-group">
-            <label htmlFor="include-symbols">Include Numbers</label>
-            <input  type="checkbox" id="include-symbols" name="include-symbols" 
-            checked={includeSymbols}
-            onChange={e => setIncludeSymbols(e.target.checked)}
+            <label htmlFor="include-numbers">Include Numbers</label>
+            <input  type="checkbox" id="include-numbers" name="include-numbers" 
+            checked={includeNumbers}
+            onChange={e => setIncludeNumbers(e.target.checked)}
             />
           </div>
           <div className="form-group">
             <label htmlFor="include-symbols">Include Symbols</label>
             <input  type="checkbox" id="include-symbols" name="include-symbols" 
-            checked={includeNumbers}
-            onChange={e => setIncludeNumbers(e.target.checked) }
+            checked={includeSymbols}
+            onChange={e => setIncludeSymbols(e.target.checked) }
             />
           </div>
           <button className="generatorbtn" onClick={handleGenerator}>
@@ -107,7 +107,6 @@ function App() {
         </div>
       </div>
     </div>
-    
   );
 }
 
